@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red_color: rgb(180, 33, 58)
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/black-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game-name{
+    /*text-align: center*/
+    font-size: 43px;
+    max-width: 100%;
+    border-top: 3px dashed var(--red_color);
+    border-bottom: 3px dashed var(--red_color);
+    
+}
+
+#buttons-game{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    background-color: #414230;
+    opacity: 0.6;
+    /* max-height: 100%; */
+    width: 70%;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 4px 0px black;
+    max-width: 100%;
+}
