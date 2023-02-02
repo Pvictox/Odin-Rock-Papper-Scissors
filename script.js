@@ -9,7 +9,7 @@ let escolhaPessoa = "";
 let playerWinCount = 0;
 let computerWinCount = 0;
 
-const POSSIBLE_CHOICES = ['rock', 'papper', 'scissor'];
+const POSSIBLE_CHOICES = ['rock', 'paper', 'scissor'];
 
 let finishGame = false;
 
@@ -40,8 +40,8 @@ buttons.forEach((botao) =>{
 
 let runGame = (escolhaUsuario, escolhaPC) =>{
     if (escolhaUsuario ==="rock" && escolhaPC==="scissor" || 
-        escolhaUsuario ==="papper" && escolhaPC==="rock" || 
-        escolhaUsuario==="scissor" && escolhaPC ==="papper"){
+        escolhaUsuario ==="paper" && escolhaPC==="rock" || 
+        escolhaUsuario==="scissor" && escolhaPC ==="paper"){
             playerWin();
         }else if (escolhaPC === escolhaUsuario){
             draw()
