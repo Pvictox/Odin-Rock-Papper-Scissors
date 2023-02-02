@@ -11,10 +11,12 @@
     --rock-color: #34292b;
     --white-color: rgb(201, 198, 198);
     --orange-color: rgb(148, 123, 25);
+    --green-color: rgb(55, 158, 71);
+
 }
 body{
     background-color: black;
-    color: white;
+    /*color: white;*/
     font-family: 'Libre Baskerville', serif;
     display: flex;
     flex-direction: column;
@@ -31,7 +33,7 @@ body{
     max-width: 100%;
     border-top: 3px dashed var(--red_color);
     border-bottom: 3px dashed var(--red_color);
-    
+    color: var(--white-color);
 }
 
 #game{
@@ -63,6 +65,29 @@ body{
 .paragraph-info{
     position: absolute;
     bottom: 3px;
+}
+
+.paragraph-info > p {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+
+#winner{
+    color: var(--green-color);
+}
+
+#draw{
+    color: var(--white-color);
+}
+
+#winner, #draw{
+    position: absolute;
+    top: 3px;
+    font-size: 25px;
+    font-weight: bold;
+   /* border: 3px solid black;*/
 }
 
 #buttons-game > button{
