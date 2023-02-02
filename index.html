@@ -8,10 +8,11 @@
     <body>
         <!--
                 TODO:
-                1 - Criar uma div p/ cada button com <p> em cima.
                 2 - Efeito de clique no botão com sombra.
                 3 - Botão de restart que aparece após 5 rodada.
                 4 - Mudar a cor do nome do vencedor na msg de vitoria (player = azul | pc = vermelho)
+                5 - Adicionar msg a cada rodada = "X beats Y. PLAYER||PC win this round "
+                    => Pode funcionar que nem os parágrafos 'draw' e 'winner' 
         -->
         <div id="game-name">
             <p>Rock - Paper - Scissors</p>
@@ -20,12 +21,19 @@
             <p id = "winner"></p>
             <p id = "draw"></p>
             <div id = "buttons-game">
-                <div>
-                   
+                <div id="rock-container">
+                    <p id="choose-rock"></p>
+                    <button id="rock"><img src="./img/stone.png"></button>
                 </div>
-                <button id="rock"><img src="./img/stone.png"></button>
-                <button id="paper"><img src="./img/paper.png"></button>
-                <button id="scissor"><img src="./img/scissors.png"></button>
+                <div id ="paper-container">
+                    <p id="choose-paper"></p>
+                    <button id="paper"><img src="./img/paper.png"></button>
+                </div>
+                <div id="scissor-container">
+                    <p id="choose-scissor"></p>
+                    <button id="scissor"><img src="./img/scissors.png"></button>
+                </div>
+                
             </div>
             <div class="paragraph-info">
                 <p id ="result-info" class="paragraph"></p>
