@@ -96,6 +96,13 @@ body{
     color: var(--white-color);
 }
 
+#restart-button{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+       
+}
 #winner, #draw, #result-round-info{
     position: absolute;
     top: 3px;
@@ -120,7 +127,11 @@ body{
     color: aqua;
 }
 
-
+#restart-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #winner-name-span{
     color: var(--green-color);
 }

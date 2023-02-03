@@ -7,8 +7,8 @@ const drawInfo = document.querySelector("#draw");
 const resultRoundInfo = document.querySelector("#result-round-info");
 const choosePaper = document.querySelector("#choose-paper");
 const chooseRock = document.querySelector("#choose-rock");
-
 const chooseScissor = document.querySelector("#choose-scissor");
+const restartDiv = document.querySelector("#restart-div");
 
 let escolhaPessoa = "";
 let playerWinCount = 0;
@@ -50,6 +50,19 @@ buttons.forEach((botao) =>{
         }
     })
 })
+
+let restart = () =>{
+    const restartButton = document.querySelector("#restart-button");
+    restartButton.addEventListener('click', ()=>{
+        playerWinCount = 0;
+        computerWinCount=0;
+        finishGame=false
+        winnerInfo.textContent= "";
+        updateInfo();
+        restartDiv.removeChild(restartButton);
+        clearChoose();
+    })
+}
 
 let capitalize = (string_value) => {
     let primeira_maiuscula = string_value[0].toUpperCase();
@@ -93,6 +106,12 @@ let endGame = (winner = "default") =>{
     resultRoundInfo.textContent="";
     winnerInfo.textContent=`The winner is: ${winner}`;
     finishGame = true;
+    const restartButton = document.createElement("button", "Restart");
+    restartButton.id = "restart-button";
+    restartButton.textContent = "RESTART";
+    restartDiv.appendChild(restartButton);
+    restart();
+    
 }
 
 let draw = () => { drawInfo.textContent="Empate!"}
