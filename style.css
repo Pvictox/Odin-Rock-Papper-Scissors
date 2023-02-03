@@ -89,7 +89,7 @@ body{
 
 
 #winner{
-    color: var(--green-color);
+    color: var(--white-color);
 }
 
 #draw{
@@ -119,6 +119,7 @@ body{
 #winner-span{
     color: aqua;
 }
+
 
 #winner-name-span{
     color: var(--green-color);
