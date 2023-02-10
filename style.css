@@ -12,6 +12,7 @@
     --white-color: rgb(201, 198, 198);
     --orange-color: rgb(148, 123, 25);
     --green-color: rgb(55, 158, 71);
+    --footer-color: rgba(148, 151, 184, 0.774);
 
 }
 body{
@@ -165,4 +166,27 @@ body{
 
 #scissor{
     background-color: var(--orange-color);
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--footer-color);
+    width: 70%;
+    max-width: 100%;
+    height: 50px;
+    margin-top: -25px;
+}
+
+.footer-icon{
+    width: 40px;
+    height: auto;
+    transition: border .2s;
+}
+
+.footer-icon:hover{
+    border: 2px solid var(--green-color);
+    border-radius: 50%;
 }
